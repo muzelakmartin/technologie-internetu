@@ -2,18 +2,10 @@
 // students_list.php
 require __DIR__ . '/connection.php';
 
-// jednoduché vyhľadávanie podľa mena / priezviska / emailu (voliteľné)
 $search = trim($_GET['search'] ?? '');
 
-$sql = "SELECT * FROM students WHERE meno = "Martin";
+$sql = "SELECT * FROM students";
 $params = [];
-
-
-
-
-
-
-
 
 if ($search !== '') {
     $sql .= " WHERE meno LIKE :search

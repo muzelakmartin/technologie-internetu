@@ -16,7 +16,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: crud_app - create,read, update, delete
+      MYSQL_DATABASE: crud_app
       MYSQL_USER: student
       MYSQL_PASSWORD: student
     volumes:
