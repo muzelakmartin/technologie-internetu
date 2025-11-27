@@ -1,19 +1,16 @@
 # Rýchly návod
 
-1) Do `docker-compose.yml` pridaj k službe **db** riadok s mapovaním SQL inicializácie:
-```
-volumes:
-  - db_data:/var/lib/mysql
-  - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
-```
+PR
+1) Spustiť Docker Desktop
 
-2) Súbory z priečinka `app/` vlož do `./app` (je mapované do `/var/www/html`).
+2) Visual Studio Code -> open folder technologie_internetu_cvicenie
 
-3) Spusť:
+3) Visual Studio Code -> New Terminal 
+
+4) Do terminálu napíšte príkaz
 ```
 docker compose up --build
 ```
-
-4) Formulár bude na `http://localhost:8080/` a phpMyAdmin na `http://localhost:8081`
+5) Formulár bude na `http://localhost:8080/` a phpMyAdmin na `http://localhost:8081`
    (host: `db`, user: `student`, pass: `student`).
 
